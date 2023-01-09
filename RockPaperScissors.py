@@ -1,19 +1,22 @@
+# importing modules
 from tkinter import *
 import random
 
+# basic configurations
 root = Tk()
 root.geometry('500x500')
 root.title('ROCK-PAPER-SCISSORS')
 root.config(bg='sky blue')
 
+# list of choice
+list = ["rock",'paper','scissor']
 
-dict = ["rock",'paper','scissor']
-
+#main func
 def play(player):
     
 
     text = ''
-    computer = random.choice(dict)
+    computer = random.choice(list)
 
     lbl1 = Label(root, text = "YOU CHOOSED:" +player.upper()+'      ', font = ('Arial', 25))
     lbl1.config(bg = 'sky blue')
@@ -39,6 +42,7 @@ chooselbl = Label(root, text = 'CHOOSE')
 chooselbl.config(bg = 'sky blue')
 chooselbl.place(relx = 0.45, rely = 0.6)
 
+# OPTIONS
 
 rockbtn = Button(root, text = 'ROCK',padx = 10,pady = 20,command=lambda : play('rock'))
 rockbtn.place(relx=0.2, rely= 0.7, anchor = NW)
