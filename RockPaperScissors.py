@@ -47,10 +47,8 @@ chooselbl.place(relx = 0.45, rely = 0.6)
 rockbtn = Button(root, text = 'ROCK',padx = 10,pady = 20,command=lambda : play('rock'))
 rockbtn.place(relx=0.2, rely= 0.7, anchor = NW)
 
-
 paperbtn = Button(root, text = 'PAPER',padx = 10,pady = 20,command=lambda : play('paper'))
 paperbtn.place(relx=0.45, rely= 0.7, anchor = NW)
-
 
 scissorbtn = Button(root, text = 'SCISSOR',padx = 7,pady = 20,command=lambda : play('scissor'))
 scissorbtn.place(relx=0.7, rely= 0.7, anchor = NW)
@@ -58,3 +56,5 @@ scissorbtn.place(relx=0.7, rely= 0.7, anchor = NW)
 
 
 root.mainloop()
+
+#HAVE FUN
